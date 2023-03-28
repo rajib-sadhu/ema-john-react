@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Cart.css';
 
-const Cart = ({cart}) => {
-
+const Cart = ({cart, storedCart}) => {
 
     let total=0;
     let totalShipping = 0;
+    // let total
     for(const product of cart){
         total = total + product.price;
         totalShipping = totalShipping + product.shipping;
