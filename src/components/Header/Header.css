@@ -1,0 +1,42 @@
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.header{
+    height: 80px;
+    width: 100%;
+    background-color: #1c2b35;
+    color:#ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.links{
+    display: block;
+}
+
+.links a{
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 30px;
+}
+.links a:hover{
+    color: #bdbdbd;
+}
+.header-cart{
+    display: none;
+}
+
+@media (max-width:560px) {
+    .links{
+        display: none;
+    }
+    .header-cart{
+        display: block;
+        font-size: 25px;
+    }
+}

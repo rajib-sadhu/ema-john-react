@@ -1,0 +1,23 @@
+
+.landscape{
+    margin: 10px auto;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.landscape img{
+    width: 100%;
+    transform: scale(1.2);
+}
+
+@media (max-width:560px) {
+    
+    .landscape{
+        width: 100%;
+        margin: 5px 0;
+        padding: 0 40px;
+    }
+
+}
