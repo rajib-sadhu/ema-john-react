@@ -8,11 +8,18 @@ const Product = ({product, handleCart}) => {
 
    const handleAddToCart = handleCart;
 
+//    console.log(img?img:'no photo')
 
     return (
         <div className='product'>
             <div className='produc-img'>
-                <img src={img} alt="product image" />
+                <img 
+                src={img} 
+                alt="product image" 
+                onError={(e=> {
+                    e.preventDefault();
+                    e.target.src='https://chadwikdavis.com/wp-content/plugins/accelerated-mobile-pages/images/SD-default-image.png';
+                })} />
             </div>
             <div className='product-info'>
                 <h6 className='product-name' >{name}</h6>
