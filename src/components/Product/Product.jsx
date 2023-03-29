@@ -39,7 +39,7 @@ const Product = ({ product, handleCart }) => {
                 <h6 className='product-name' >{name}</h6>
                 <p>Price: ₹{price}</p>
                 <p>Manufecture: {seller} </p>
-                <p>Rating: <span className='stars' ><ShowStar ratings={ratings} /></span> </p>
+                <p className='rating' >Rating: <span className='stars' ><ShowStar ratings={ratings} /></span> </p>
             </div>
             <button onClick={() => { handleAddToCart(product) }} className='btn-cart'>Add to Cart <GrCart /> </button>
         </div>
