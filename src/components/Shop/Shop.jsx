@@ -34,12 +34,9 @@ const Shop = () => {
                 console.log(addedProduct)
             }
         
-            setCart(savedCart)
+            setCart(savedCart);
 
-        
-        // setStoredCart(stored);
-
-    },[products])
+    },[products]);
 
     const handleAddToCart = product =>{
         let newCart =[];

@@ -51,3 +51,8 @@
 .btn-cart:hover{
     background-color:#ff9900 ;
 }
+
+.stars{
+    color: #ff9900;
+    filter: drop-shadow(0px 14px -4px rgba(0,0,0,0.75));
+}
