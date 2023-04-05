@@ -8,6 +8,7 @@ import Home from './components/Layout/Home'
 import Orders from './components/Orders/Orders'
 import Inventory from './components/Inventory/Inventory'
 import Login from './components/Login/Login'
+import { cartProductLoader } from './components/CustomLoader/CustormLoader'
 
 const router = createBrowserRouter([
 
@@ -22,7 +23,8 @@ const router = createBrowserRouter([
       },
       {
         path:'orders',
-        element:<Orders/>
+        element:<Orders/>,
+        loader:cartProductLoader
       },
       {
         path:'inventory',
