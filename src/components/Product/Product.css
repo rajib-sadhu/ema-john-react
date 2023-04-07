@@ -8,10 +8,11 @@
 }
 
 .product-img{
-    margin: 0 auto;
+    margin: 8px auto;
     width: 95%;
     height: 286px;
     overflow: hidden;
+    border-radius: 8px;
 }
 
 .product img {
