@@ -1,5 +1,5 @@
 import React from 'react';
-import { RiDeleteBin6Line } from 'react-icons/ri'
+import { RiDeleteBin6Line } from 'react-icons/ri';
 
 const ReviewItem = ({ product, handleRemoveFromCart}) => {
     // console.log(product);

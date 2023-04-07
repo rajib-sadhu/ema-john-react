@@ -15,6 +15,21 @@
     margin-right: 50px;
 }
 
+.btn-proceed{
+    background-color:  #ff9900;
+    color: black;
+    margin: 10px auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    padding:5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
 
 @media (max-width:560px) {
 

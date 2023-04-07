@@ -18,3 +18,17 @@
     padding-left: 15px;
     padding-bottom: 15px;
 }
+
+.btn-clear-cart{
+    margin: 10px auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    padding:5px 10px;
+    background-color: rgb(255, 108, 108);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './Cart.css';
+import { RiDeleteBin6Line } from 'react-icons/ri';
 
-const Cart = ({cart, storedCart}) => {
+const Cart = ({cart, storedCart, handleClearCart, children}) => {
 
     let total=0;
     let totalShipping = 0;
@@ -25,6 +26,12 @@ const Cart = ({cart, storedCart}) => {
             <p>Tax: ₹{tax.toFixed(2)} </p>
 
             <h4>Grand Total: ₹{grandTotal.toFixed(2)} </h4>
+
+            <button onClick={handleClearCart} className='btn-clear-cart'>
+                <span>Clear cart</span> 
+                <RiDeleteBin6Line/>
+            </button>
+            {children}
         </div>
     );
 };
