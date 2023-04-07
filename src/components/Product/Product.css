@@ -7,8 +7,9 @@
     overflow: hidden;
 }
 
-.produc-img{
-    width: 286px;
+.product-img{
+    margin: 0 auto;
+    width: 95%;
     height: 286px;
     overflow: hidden;
 }

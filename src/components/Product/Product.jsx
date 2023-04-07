@@ -26,7 +26,7 @@ const Product = ({ product, handleCart }) => {
 
     return (
         <div className='product'>
-            <div className='produc-img'>
+            <div className='product-img'>
                 <img
                     src={img}
                     alt="product image"
