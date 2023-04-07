@@ -1,9 +1,9 @@
 import React from 'react';
-import {RiDeleteBin6Line} from 'react-icons/ri'
+import { RiDeleteBin6Line } from 'react-icons/ri'
 
-const ReviewItem = ({product}) => {
-    console.log(product);
-    const {id, img, name, price, quantity} = product;
+const ReviewItem = ({ product, handleRemoveFromCart}) => {
+    // console.log(product);
+    const { id, img, name, price, quantity } = product;
     return (
         <div className='review-item'>
             <img src={img} alt="" />
@@ -12,8 +12,8 @@ const ReviewItem = ({product}) => {
                 <p>Price: <span className='orange-text'>${price}</span> </p>
                 <p>Quantity: <span className='orange-text'>${quantity}</span>  </p>
             </div>
-            <button className='btn-delete'>
-                <RiDeleteBin6Line/>
+            <button onClick={()=>handleRemoveFromCart(id)} className='btn-delete'>
+                <RiDeleteBin6Line />
             </button>
 
 
